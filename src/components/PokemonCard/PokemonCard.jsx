@@ -1,10 +1,12 @@
 
-const PokemonCard = (props) => {
+const PokemonCard = ({pokemon}) => {
+    
     return (
         <>
-            <p>{props.pokemon.name}</p>
-            <p>{props.pokemon.id}</p>
-            <img src={props.pokemon.sprites.other.dream_world.front_default} alt={props.pokemon.name} ></img>
+            <h2>Pokemon Details</h2>
+            <p>{pokemon.id}</p>
+            <p>{pokemon.name}</p>
+            <img src={pokemon.sprites.front_default} alt={pokemon.name}></img>
         </>
 
     )

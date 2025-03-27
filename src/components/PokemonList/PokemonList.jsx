@@ -7,8 +7,9 @@ const PokemonList = ({pokemonData}) => {
 
             <ul>
                 {pokemonData.map((pokemon) => (
+                    
                     <li key={pokemon.id}>
-                        <p>{pokemon.name}</p>
+                        <PokemonCard pokemon={pokemon}/>
                     </li>
                 ))}
             </ul>
